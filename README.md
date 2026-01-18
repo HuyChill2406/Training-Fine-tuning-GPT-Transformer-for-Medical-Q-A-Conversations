@@ -123,30 +123,7 @@ Repo có notebook tổng hợp và trực quan hóa các thước đo:
 
 ---
 
-## 3. Cấu trúc thư mục (gợi ý)
-
-Khi chạy notebook, repo thường tạo các thư mục lưu artifacts/checkpoints, ví dụ:
-
-```
-.
-├── GPT_training_from_scratch.ipynb
-├── GPT2_pretrained.ipynb
-├── transformer_training_from_scratch.ipynb
-├── transformer_pretrained.ipynb
-├── artifacts_gpt_scratch/
-│   ├── bpe_tok/
-│   └── gpt_scratch_best.pt
-├── artifacts/
-│   └── ... (token/model scratch transformer)
-└── ft-gpt/ hoặc ft-gpt2/
-    └── checkpoint-xxxx/ (Trainer checkpoints)
-```
-
-(Tên thư mục có thể thay đổi tùy bạn chỉnh trong notebook.)
-
----
-
-## 4. Cài đặt môi trường
+## 3. Cài đặt môi trường
 
 ### Cách nhanh nhất: Google Colab
 
@@ -169,7 +146,7 @@ pip install rouge_score         # nếu notebook cần
 
 ---
 
-## 5. Hướng dẫn chạy
+## 4. Hướng dẫn chạy
 
 ### A. Training từ đầu
 
@@ -194,7 +171,7 @@ pip install rouge_score         # nếu notebook cần
 
 ---
 
-## 6. Ý tưởng mở rộng
+## 5. Ý tưởng mở rộng
 
 * Thử các dataset hội thoại khác (đa domain) để tăng tính tổng quát.
 * Thêm **instruction format** (system prompt) cho hội thoại y tế.
@@ -206,7 +183,7 @@ pip install rouge_score         # nếu notebook cần
 
 ---
 
-## 7. Ghi công
+## 6. References
 
 * Dataset: `RafaelMPereira/HealthCareMagic-100k-Chat-Format-en` (HuggingFace Datasets)
 * Pretrained models:
